@@ -152,11 +152,10 @@ h3, h2
   }
 }
 
-@media (max-width: 280px)
+@media (max-width: 365px)
 {
   .score
   {
-    display: grid;
     text-align: center;
   }
 }
