@@ -1,0 +1,162 @@
+*
+{
+  box-sizing: border-box;
+}
+
+:root
+{
+  --dark: #333;
+  --light: #eee;
+  --secondary: coral;
+}
+
+img
+{
+  width: 100%;
+}
+
+body
+{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  height: 100vh;
+}
+
+h3, h2
+{
+  font-weight: 400;
+}
+
+.container
+{
+  width: 50%;
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.roundWinner
+{
+  text-align:center;
+  margin-bottom: 50px;
+}
+
+.playersChoice
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  height: 165px;
+  text-align: center;
+}
+
+.player
+{
+  display: block;
+}
+
+.playerChoice, .computerChoice
+{
+  position: relative;
+  animation-name: animate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    top: 0;
+  }
+  50%
+  {
+    top: -10px;
+  }
+  100%
+  {
+    top: 0px;
+  }
+}
+
+.choices
+{
+  margin-top: 50px;;
+}
+
+.choice
+{
+  cursor: pointer;
+  border: 0;
+  width: 70px;
+  height: 25px;
+  background-color: var(--secondary);
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+  margin: 0 10px;
+}
+
+.choice:hover
+{
+  opacity: 0.95;
+}
+
+.choice:active
+{
+  transform: scale(0.9);
+}
+
+.restart
+{
+  background-color: red;
+  color: var(--light);
+  width: 100px;
+  height: 40px;
+}
+
+@media (max-width: 1000px)
+{
+  .playersChoice
+  {
+    width: 100%;
+  }
+}
+
+@media (max-width: 573px)
+{
+  .choices
+  {
+    display: grid;
+    gap: 10px;
+  }
+
+  .playersChoice i
+  {
+    width: 50px;
+  }
+}
+
+@media (max-width: 280px)
+{
+  .score
+  {
+    display: grid;
+    text-align: center;
+  }
+}

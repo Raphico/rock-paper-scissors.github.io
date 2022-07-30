@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="score">
+        <h3>Player: <span id="playerScore">0</span></h3>
+        <h3>Computer: <span id="computerScore">0</span></h3>
+      </div>
+
+      <div class="restart-button">
+        <button class="choice restart">Restart Game</button>
+      </div>
+
+      <div>
+        <h2 class="roundWinner">Rock, Paper or Scissors</h2>
+      </div>
+      <div class="playersChoice">
+        <div>
+          <div class="computerChoice">
+            <img src="imgs/rock.png" alt="rock">
+          </div>
+          <span class="player">computer</span>
+        </div>
+        <div>
+          <div class="playerChoice">
+            <img src="imgs/rock.png" alt="rock">
+          </div>
+          <span class="player">You</span>
+        </div>
+      </div>
+      <div class="choices">
+        <button class="choice" id="rock">Rock</button>
+        <button class="choice" id="paper">Paper</button>
+        <button class="choice" id="scissors">Scissors</button>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
