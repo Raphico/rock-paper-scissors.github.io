@@ -144,6 +144,7 @@ h3, h2
   {
     display: grid;
     gap: 10px;
+    margin-bottom: 20px;
   }
 
   .playersChoice i
@@ -157,5 +158,9 @@ h3, h2
   .score
   {
     text-align: center;
+  }
+  .choices
+  {
+    margin-bottom: 20px;
   }
 }
